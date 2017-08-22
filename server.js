@@ -1,7 +1,6 @@
 var express = require('express');
 var app = express();
-const requestIp = require('request-ip');
-const os = require('os');
+var requestIp = require('request-ip');
 
 app.get("/", function (request, response) {
   var ip = requestIp.getClientIp(request);
